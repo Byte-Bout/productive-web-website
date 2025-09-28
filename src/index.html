@@ -6,5 +6,95 @@
     <link rel="stylesheet" href="/src/styles/output.css" />
     <title>ProductiveWeb</title>
   </head>
-  <body></body>
+  <body class="font-family-AlanSans flex h-screen flex-col">
+    <div class="bg-base-200 flex h-16 w-full flex-row items-center justify-between">
+      <!-- Drawer -->
+      <div class="drawer lg:hidden">
+        <input id="my-drawer" type="checkbox" class="drawer-toggle" />
+        <div class="drawer-content">
+          <label for="my-drawer" class="btn btn-circle btn-ghost ml-2">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-5 w-5"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7" />
+            </svg>
+          </label>
+        </div>
+        <div class="drawer-side">
+          <label for="my-drawer" aria-label="close sidebar" class="drawer-overlay"></label>
+          <ul class="menu bg-base-200 text-base-content min-h-full w-80 p-4">
+            <!-- Sidebar content here -->
+            <li>
+              <a href="https://github.com/byte-bout/productive-web" target="_blank" class="flex flex-row items-center">
+                <img src="/public/interface-icons/github.svg" alt="Github Logo" class="h-4 w-4" />
+                Github
+              </a>
+            </li>
+            <li>
+              <a href="https://productiveweb.co/support" class="flex flex-row items-center">
+                <img src="/public/interface-icons/support.svg" alt="Support Icon" class="h-4 w-4" />
+                Support
+              </a>
+            </li>
+            <li>
+              <a href="https://productiveweb.co/policy" class="flex flex-row items-center">
+                <img src="/public/interface-icons/shield.svg" alt="Shield Icon" class="h-4 w-4" />
+                Privacy & Policy
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <a href="https://productiveweb.co" class="btn btn-ghost ml-2 flex flex-row items-center text-xl font-bold">
+        <img src="/public/productive-web.svg" alt="ProductiveWeb Logo" class="-mr-1 -ml-1.5 h-7 w-7" />
+        ProductiveWeb
+      </a>
+
+      <ul class="mr-2 hidden flex-row items-center lg:flex">
+        <li>
+          <a href="https://github.com/byte-bout/productive-web" target="_blank" class="btn btn-ghost">
+            <img src="/public/interface-icons/github.svg" alt="Github Logo" class="h-4 w-4" />
+            Github
+          </a>
+        </li>
+        <li>
+          <a href="https://productiveweb.co/support" class="btn btn-ghost">
+            <img src="/public/interface-icons/support.svg" alt="Support Icon" class="h-4 w-4" />
+            Support
+          </a>
+        </li>
+        <li>
+          <a href="https://productiveweb.co/policy" class="btn btn-ghost">
+            <img src="/public/interface-icons/shield.svg" alt="Shield Icon" class="h-4 w-4" />
+            Privacy & Policy
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <footer class="bg-base-200 absolute bottom-0 flex h-12 w-full flex-row items-center justify-between">
+      <div class="flex flex-row items-center">
+        <p class="ml-5 text-xs">© 2025 ByteBout · Built with 💚 and ☕️</p>
+      </div>
+
+      <nav class="mr-5 flex h-full flex-row items-center gap-1">
+        <a href="https://x.com/bytebout" target="_blank">
+          <img src="/public/interface-icons/x.svg" alt="X Logo" class="h-5 w-5 md:h-6 md:w-6" />
+        </a>
+        <a href="https://bsky.app/profile/bytebout.bsky.social" target="_blank">
+          <img src="/public/interface-icons/bluesky.svg" alt="Bluesky Logo" class="h-5 w-5 md:h-6 md:w-6" />
+        </a>
+        <a href="https://reddit.com/user/bytebout" target="_blank">
+          <img src="/public/interface-icons/reddit.svg" alt="Reddit Logo" class="h-5 w-5 md:h-6 md:w-6" />
+        </a>
+        <a href="https://linkedin.com/company/bytebout" target="_blank">
+          <img src="/public/interface-icons/linkedin.svg" alt="Linkedin Logo" class="h-5 w-5 md:h-6 md:w-6" />
+        </a>
+      </nav>
+    </footer>
+  </body>
 </html>
