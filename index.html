@@ -7,8 +7,8 @@
     <link rel="stylesheet" href="./src/styles/output.css" />
     <title>ProductiveWeb | Take Control of Your Screen</title>
   </head>
-  <body class="font-family-AlanSans flex h-screen flex-col">
-    <div class="bg-base-200 flex h-16 w-full flex-row items-center justify-between shadow-md">
+  <body class="font-family-AlanSans flex min-h-screen flex-col">
+    <div class="bg-base-200 flex h-18 w-full flex-row items-center justify-between shadow-md">
       <!-- Drawer -->
       <div class="drawer lg:hidden">
         <input id="my-drawer" type="checkbox" class="drawer-toggle" />
@@ -80,7 +80,7 @@
       </ul>
     </div>
 
-    <div class="mb-12 flex h-full w-full flex-col items-center justify-center overflow-auto">
+    <div class="flex w-full flex-1 flex-col items-center justify-center overflow-auto">
       <div class="flex flex-col items-center justify-center">
         <h1 class="block w-full px-2 text-center text-5xl font-bold lg:text-6xl">Take Control of Your Screen</h1>
         <p class="w-fit max-w-lg px-2 py-6 text-center md:px-0 lg:text-lg">
@@ -109,9 +109,9 @@
       </div>
     </div>
 
-    <footer class="bg-base-200 absolute bottom-0 flex h-12 w-full flex-row items-center justify-between">
+    <footer class="bg-base-200 flex h-14 w-full flex-col-reverse items-center justify-between md:flex-row">
       <div class="flex flex-row items-center">
-        <p class="ml-2 text-xs md:ml-5 md:text-sm">© 2025 ByteBout · Built with 💚 and ☕️</p>
+        <p class="ml-2 pb-1 text-sm md:ml-5 md:pb-0">© 2025 ByteBout · Built with 💚 and ☕️</p>
       </div>
 
       <nav class="mr-2 flex h-full flex-row items-center gap-0.5 md:mr-5">
