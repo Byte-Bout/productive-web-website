@@ -10,5 +10,146 @@
     <link rel="stylesheet" href="./styles/output.css" />
     <title>ProductiveWeb | Take Control of Your Screen</title>
   </head>
-  <body class="font-family-AlanSans"></body>
+  <body class="font-family-AlanSans flex min-h-screen flex-col">
+    <div class="bg-base-200 flex h-18 w-full flex-row items-center justify-between shadow-md">
+      <!-- Drawer -->
+      <div class="drawer lg:hidden">
+        <input id="my-drawer" type="checkbox" class="drawer-toggle" />
+        <div class="drawer-content">
+          <label for="my-drawer" class="btn btn-circle btn-ghost ml-2">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-6 w-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7" />
+            </svg>
+          </label>
+        </div>
+        <div class="drawer-side">
+          <label for="my-drawer" aria-label="close sidebar" class="drawer-overlay"></label>
+          <ul class="menu bg-base-200 text-base-content min-h-full w-60 p-4">
+            <!-- Sidebar content here -->
+            <li>
+              <a
+                href="https://github.com/byte-bout/productive-web"
+                target="_blank"
+                class="flex flex-row items-center text-base">
+                <img src="./public/interface-icons/github.svg" alt="Github Logo" class="h-5 w-5" />
+                Github
+              </a>
+            </li>
+            <li>
+              <a href="https://productiveweb.co/support" class="flex flex-row items-center text-base">
+                <img src="./public/interface-icons/support.svg" alt="Support Icon" class="h-5 w-5" />
+                Support Us
+              </a>
+            </li>
+            <li>
+              <a href="https://productiveweb.co/policy" class="flex flex-row items-center text-base">
+                <img src="./public/interface-icons/shield.svg" alt="Shield Icon" class="h-5 w-5" />
+                Privacy Policy
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <a href="https://productiveweb.co" class="btn btn-ghost ml-2 flex flex-row items-center text-2xl font-medium">
+        <img src="./public/productive-web.svg" alt="ProductiveWeb Logo" class="-mr-1 -ml-1.5 h-8 w-8" />
+        ProductiveWeb
+      </a>
+
+      <ul class="mr-2 hidden flex-row items-center lg:flex">
+        <li>
+          <a href="https://github.com/byte-bout/productive-web" target="_blank" class="btn btn-ghost text-base">
+            <img src="./public/interface-icons/github.svg" alt="Github Logo" class="h-5 w-5" />
+            Github
+          </a>
+        </li>
+        <li>
+          <a href="https://productiveweb.co/support" class="btn btn-ghost text-base">
+            <img src="./public/interface-icons/support.svg" alt="Support Icon" class="h-5 w-5" />
+            Support Us
+          </a>
+        </li>
+        <li>
+          <a href="https://productiveweb.co/policy" class="btn btn-ghost text-base">
+            <img src="./public/interface-icons/shield.svg" alt="Shield Icon" class="h-5 w-5" />
+            Privacy Policy
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="flex w-full flex-1 flex-col items-center justify-center overflow-auto">
+      <div class="flex flex-col items-center justify-center">
+        <h1 class="block w-full px-2 text-center text-5xl font-bold lg:text-6xl">Take Control of Your Screen</h1>
+        <p class="w-fit max-w-lg px-2 py-4 text-center md:px-0 lg:text-lg">
+          Remove Distractions like feed, recommendations, comments, and shorts from popular social and streaming
+          platforms
+        </p>
+      </div>
+
+      <div
+        class="border-base-300 mt-2 flex h-fit w-fit flex-row items-center justify-center rounded-4xl border shadow-md">
+        <a
+          href="https://chrome.google.com/webstore/detail/hgodoblomegakpkpefhnlffpgobdjflb"
+          target="_blank"
+          class="btn btn-ghost btn-circle btn-primary h-14 w-14 p-2 lg:h-16 lg:w-16">
+          <img src="./public/browsers-logo/chrome.svg" alt="Chrome Logo" class="h-full" />
+        </a>
+        <a
+          href="https://addons.mozilla.org/en-US/firefox/addon/productiveweb/"
+          target="_blank"
+          class="btn btn-ghost btn-circle btn-primary h-14 w-14 p-2 lg:h-16 lg:w-16">
+          <img src="./public/browsers-logo/firefox.svg" alt="Firefox Logo" class="h-full" />
+        </a>
+        <a
+          href="https://chrome.google.com/webstore/detail/hgodoblomegakpkpefhnlffpgobdjflb"
+          target="_blank"
+          class="btn btn-ghost btn-circle btn-primary h-14 w-14 p-2 lg:h-16 lg:w-16">
+          <img src="./public/browsers-logo/edge.svg" alt="Edge Logo" class="h-full" />
+        </a>
+        <a
+          href="https://chrome.google.com/webstore/detail/hgodoblomegakpkpefhnlffpgobdjflb"
+          target="_blank"
+          class="btn btn-ghost btn-circle btn-primary h-14 w-14 p-2 lg:h-16 lg:w-16">
+          <img src="./public/browsers-logo/opera.svg" alt="Opera Logo" class="h-full" />
+        </a>
+        <a
+          href="https://chrome.google.com/webstore/detail/hgodoblomegakpkpefhnlffpgobdjflb"
+          target="_blank"
+          class="btn btn-ghost btn-circle btn-primary h-14 w-14 p-2 lg:h-16 lg:w-16">
+          <img src="./public/browsers-logo/brave.svg" alt="Brave Logo" class="h-full" />
+        </a>
+      </div>
+
+      <a href="https://forms.gle/2vPt1WTphizmh1s67" target="_blank" class="btn btn-soft btn-primary mt-4">
+        Feature Request
+      </a>
+    </div>
+
+    <footer class="bg-base-200 flex h-14 w-full flex-col-reverse items-center justify-between md:flex-row">
+      <div class="flex flex-row items-center">
+        <p class="ml-2 pb-1 text-sm md:ml-5 md:pb-0">© 2025 ByteBout · Built with 💚 and ☕️</p>
+      </div>
+
+      <nav class="mr-2 flex h-full flex-row items-center md:mr-5">
+        <a href="https://x.com/bytebout" target="_blank">
+          <img src="./public/interface-icons/x.svg" alt="X Logo" class="h-7 w-7" />
+        </a>
+        <a href="https://bsky.app/profile/bytebout.bsky.social" target="_blank">
+          <img src="./public/interface-icons/bluesky.svg" alt="Bluesky Logo" class="h-7 w-7" />
+        </a>
+        <a href="https://reddit.com/user/bytebout" target="_blank">
+          <img src="./public/interface-icons/reddit.svg" alt="Reddit Logo" class="h-7 w-7" />
+        </a>
+        <a href="https://linkedin.com/company/bytebout" target="_blank">
+          <img src="./public/interface-icons/linkedin.svg" alt="Linkedin Logo" class="h-7 w-7" />
+        </a>
+      </nav>
+    </footer>
+  </body>
 </html>
