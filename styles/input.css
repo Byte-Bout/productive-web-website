@@ -1,0 +1,16 @@
+@import "tailwindcss";
+@plugin "daisyui" {
+  themes: sunset;
+}
+
+@font-face {
+  font-family: "AlanSans";
+  src: url("/public/fonts/AlanSans.ttf") format("truetype");
+  font-weight: 400 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@theme {
+  --font-family-AlanSans: "AlanSans", Arial, sans-serif;
+}
